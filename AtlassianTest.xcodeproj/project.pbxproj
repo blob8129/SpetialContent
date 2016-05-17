@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE11DA4C1CE9A93600D1D7B7 /* SpecialContentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11DA4B1CE9A93600D1D7B7 /* SpecialContentOperation.swift */; };
+		CE11DA4E1CE9A97E00D1D7B7 /* SpetialContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11DA4D1CE9A97E00D1D7B7 /* SpetialContent.swift */; };
+		CE11DA501CE9B26300D1D7B7 /* FinalStringOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11DA4F1CE9B26300D1D7B7 /* FinalStringOperation.swift */; };
+		CE52EF191CEAAEA40065AD70 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */; };
 		CEA4344F1CE956EF0052F7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */; };
 		CEA434511CE956EF0052F7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA434501CE956EF0052F7E2 /* ViewController.swift */; };
 		CEA434541CE956F00052F7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA434521CE956F00052F7E2 /* Main.storyboard */; };
 		CEA434561CE956F00052F7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA434551CE956F00052F7E2 /* Assets.xcassets */; };
 		CEA434591CE956F00052F7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA434571CE956F00052F7E2 /* LaunchScreen.storyboard */; };
 		CEA434641CE956F00052F7E2 /* AtlassianTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA434631CE956F00052F7E2 /* AtlassianTestTests.swift */; };
+		CEA434701CE957CF0052F7E2 /* PageTitleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4346F1CE957CF0052F7E2 /* PageTitleOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE11DA4B1CE9A93600D1D7B7 /* SpecialContentOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialContentOperation.swift; sourceTree = "<group>"; };
+		CE11DA4D1CE9A97E00D1D7B7 /* SpetialContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpetialContent.swift; sourceTree = "<group>"; };
+		CE11DA4F1CE9B26300D1D7B7 /* FinalStringOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalStringOperation.swift; sourceTree = "<group>"; };
+		CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
 		CEA4344B1CE956EF0052F7E2 /* AtlassianTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtlassianTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA434501CE956EF0052F7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		CEA4345F1CE956F00052F7E2 /* AtlassianTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtlassianTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA434631CE956F00052F7E2 /* AtlassianTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlassianTestTests.swift; sourceTree = "<group>"; };
 		CEA434651CE956F00052F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA4346F1CE957CF0052F7E2 /* PageTitleOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE11DA511CEA9E2D00D1D7B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE11DA4D1CE9A97E00D1D7B7 /* SpetialContent.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		CEA434421CE956EF0052F7E2 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +95,15 @@
 		CEA4344D1CE956EF0052F7E2 /* AtlassianTest */ = {
 			isa = PBXGroup;
 			children = (
+				CE11DA511CEA9E2D00D1D7B7 /* Model */,
+				CEA4346E1CE957A10052F7E2 /* Operations */,
 				CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */,
 				CEA434501CE956EF0052F7E2 /* ViewController.swift */,
 				CEA434521CE956F00052F7E2 /* Main.storyboard */,
 				CEA434551CE956F00052F7E2 /* Assets.xcassets */,
 				CEA434571CE956F00052F7E2 /* LaunchScreen.storyboard */,
 				CEA4345A1CE956F00052F7E2 /* Info.plist */,
+				CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */,
 			);
 			path = AtlassianTest;
 			sourceTree = "<group>";
@@ -94,6 +115,16 @@
 				CEA434651CE956F00052F7E2 /* Info.plist */,
 			);
 			path = AtlassianTestTests;
+			sourceTree = "<group>";
+		};
+		CEA4346E1CE957A10052F7E2 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				CEA4346F1CE957CF0052F7E2 /* PageTitleOperation.swift */,
+				CE11DA4B1CE9A93600D1D7B7 /* SpecialContentOperation.swift */,
+				CE11DA4F1CE9B26300D1D7B7 /* FinalStringOperation.swift */,
+			);
+			name = Operations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +228,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11DA4E1CE9A97E00D1D7B7 /* SpetialContent.swift in Sources */,
+				CE11DA501CE9B26300D1D7B7 /* FinalStringOperation.swift in Sources */,
 				CEA434511CE956EF0052F7E2 /* ViewController.swift in Sources */,
+				CE11DA4C1CE9A93600D1D7B7 /* SpecialContentOperation.swift in Sources */,
 				CEA4344F1CE956EF0052F7E2 /* AppDelegate.swift in Sources */,
+				CE52EF191CEAAEA40065AD70 /* TypeAliases.swift in Sources */,
+				CEA434701CE957CF0052F7E2 /* PageTitleOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +424,7 @@
 				CEA4346A1CE956F00052F7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEA4346B1CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "AtlassianTestTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +433,7 @@
 				CEA4346D1CE956F00052F7E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

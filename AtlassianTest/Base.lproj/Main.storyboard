@@ -1,25 +1,98 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="f9o-Pb-llS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AtlassianTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="wgx-d5-04Q">
+                                <rect key="frame" x="142" y="221" width="37" height="37"/>
+                                <color key="color" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnj-zU-dad">
+                                <rect key="frame" x="124" y="218" width="72" height="45"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Parse ">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="parseStringAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nbC-S5-VON"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="re1-X0-qXV">
+                                <rect key="frame" x="24" y="72" width="272" height="138"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016 (bicepleft) http://www.nbcolympics.com (bicepright) </string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7C-U1-t81">
+                                <rect key="frame" x="24" y="271" width="272" height="201"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="K7C-U1-t81" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="47p-G0-djT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="re1-X0-qXV" secondAttribute="trailing" constant="8" id="5lf-t6-7YQ"/>
+                            <constraint firstItem="tnj-zU-dad" firstAttribute="top" secondItem="re1-X0-qXV" secondAttribute="bottom" constant="8" id="BoE-M0-U10"/>
+                            <constraint firstItem="wgx-d5-04Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K13-DY-VCK"/>
+                            <constraint firstItem="wgx-d5-04Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NPz-sf-VlF"/>
+                            <constraint firstItem="tnj-zU-dad" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RPU-2H-P6u"/>
+                            <constraint firstItem="re1-X0-qXV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="TNY-Lk-sEA"/>
+                            <constraint firstItem="re1-X0-qXV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Y1Q-w9-JuZ"/>
+                            <constraint firstItem="tnj-zU-dad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nHX-Jg-WYn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="K7C-U1-t81" secondAttribute="bottom" constant="8" id="oAV-i7-QWy"/>
+                            <constraint firstItem="K7C-U1-t81" firstAttribute="top" secondItem="tnj-zU-dad" secondAttribute="bottom" constant="8" id="pyr-WZ-wMX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K7C-U1-t81" secondAttribute="trailing" constant="8" id="rjp-k8-akT"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ARc-Fy-8Ax"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="wgx-d5-04Q" id="yDs-oR-UTQ"/>
+                        <outlet property="inputTextField" destination="re1-X0-qXV" id="RvX-Vl-GPp"/>
+                        <outlet property="parseStringButton" destination="tnj-zU-dad" id="pfO-gx-GNh"/>
+                        <outlet property="resultTextField" destination="K7C-U1-t81" id="3MJ-3g-S8A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1107" y="226"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UGV-Ez-o6U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f9o-Pb-llS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AXM-sZ-Hb3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XPL-za-CxP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbu-MK-Ala" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="226"/>
         </scene>
     </scenes>
 </document>
