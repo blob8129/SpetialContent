@@ -25,7 +25,6 @@ class SpecialContentOperation: NSOperation {
     private let spetialContentCallback: (([String:[String]])-> Void)
     private let noSpetialContentCallback: ()-> Void
 
-    
     init(input: String, callback: ([String:[String]])-> Void, noContentCallback: ()->Void){
         self.input = input
         self.spetialContentCallback = callback
@@ -37,7 +36,6 @@ class SpecialContentOperation: NSOperation {
         guard let regexp = try? NSRegularExpression(pattern: SpetialContent.pattern, options: []) else { return }
         
         let matches = regexp.matchesInString(input, options: [], range: NSMakeRange(0, input.characters.count))
-        
         if matches.count == 0 {
             dispatch_async(dispatch_get_main_queue(), {
                 self.noSpetialContentCallback()

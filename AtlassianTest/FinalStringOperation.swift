@@ -24,15 +24,18 @@ class FinalStringOperation: NSOperation {
         self.finalStringCallback = finalStringCallback
     }
     
-    override func main() {
-
-        let links = dependencies.filter{dependency in
+    internal func getLinks() -> [[String: String]]{
+        return dependencies.filter{dependency in
             dependency is LinkTileProtocol
-        }.map{dependency in
-            dependency as! LinkTileProtocol
-        }.map{dependency in
-            ["url": dependency.link, "title": dependency.title]
+            }.map{dependency in
+                dependency as! LinkTileProtocol
+            }.map{dependency in
+                ["url": dependency.link, "title": dependency.title]
         }
+    }
+    
+    override func main() {
+        let links = getLinks()
         
         var final = JSONDictionary()
         for key in input.keys where key != SpetialContent.links.key{
@@ -44,6 +47,4 @@ class FinalStringOperation: NSOperation {
             self.finalStringCallback(final)
         }
     }
-
-
 }

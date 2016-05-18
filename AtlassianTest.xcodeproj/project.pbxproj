@@ -11,12 +11,14 @@
 		CE11DA4E1CE9A97E00D1D7B7 /* SpetialContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11DA4D1CE9A97E00D1D7B7 /* SpetialContent.swift */; };
 		CE11DA501CE9B26300D1D7B7 /* FinalStringOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11DA4F1CE9B26300D1D7B7 /* FinalStringOperation.swift */; };
 		CE52EF191CEAAEA40065AD70 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */; };
+		CE52EF1B1CEB08BD0065AD70 /* PageTitleOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EF1A1CEB08BD0065AD70 /* PageTitleOperationTests.swift */; };
+		CE52EF1D1CEB09640065AD70 /* SpetialContentOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EF1C1CEB09640065AD70 /* SpetialContentOperationTests.swift */; };
+		CE52EF1F1CEC262F0065AD70 /* FinalStringOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52EF1E1CEC262F0065AD70 /* FinalStringOperationTests.swift */; };
 		CEA4344F1CE956EF0052F7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */; };
 		CEA434511CE956EF0052F7E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA434501CE956EF0052F7E2 /* ViewController.swift */; };
 		CEA434541CE956F00052F7E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA434521CE956F00052F7E2 /* Main.storyboard */; };
 		CEA434561CE956F00052F7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA434551CE956F00052F7E2 /* Assets.xcassets */; };
 		CEA434591CE956F00052F7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA434571CE956F00052F7E2 /* LaunchScreen.storyboard */; };
-		CEA434641CE956F00052F7E2 /* AtlassianTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA434631CE956F00052F7E2 /* AtlassianTestTests.swift */; };
 		CEA434701CE957CF0052F7E2 /* PageTitleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4346F1CE957CF0052F7E2 /* PageTitleOperation.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,9 @@
 		CE11DA4D1CE9A97E00D1D7B7 /* SpetialContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpetialContent.swift; sourceTree = "<group>"; };
 		CE11DA4F1CE9B26300D1D7B7 /* FinalStringOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalStringOperation.swift; sourceTree = "<group>"; };
 		CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		CE52EF1A1CEB08BD0065AD70 /* PageTitleOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleOperationTests.swift; sourceTree = "<group>"; };
+		CE52EF1C1CEB09640065AD70 /* SpetialContentOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpetialContentOperationTests.swift; sourceTree = "<group>"; };
+		CE52EF1E1CEC262F0065AD70 /* FinalStringOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalStringOperationTests.swift; sourceTree = "<group>"; };
 		CEA4344B1CE956EF0052F7E2 /* AtlassianTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtlassianTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA434501CE956EF0052F7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +48,6 @@
 		CEA434581CE956F00052F7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA4345A1CE956F00052F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA4345F1CE956F00052F7E2 /* AtlassianTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtlassianTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA434631CE956F00052F7E2 /* AtlassianTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtlassianTestTests.swift; sourceTree = "<group>"; };
 		CEA434651CE956F00052F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA4346F1CE957CF0052F7E2 /* PageTitleOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,8 +115,10 @@
 		CEA434621CE956F00052F7E2 /* AtlassianTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEA434631CE956F00052F7E2 /* AtlassianTestTests.swift */,
+				CE52EF1A1CEB08BD0065AD70 /* PageTitleOperationTests.swift */,
+				CE52EF1C1CEB09640065AD70 /* SpetialContentOperationTests.swift */,
 				CEA434651CE956F00052F7E2 /* Info.plist */,
+				CE52EF1E1CEC262F0065AD70 /* FinalStringOperationTests.swift */,
 			);
 			path = AtlassianTestTests;
 			sourceTree = "<group>";
@@ -242,7 +248,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA434641CE956F00052F7E2 /* AtlassianTestTests.swift in Sources */,
+				CE52EF1B1CEB08BD0065AD70 /* PageTitleOperationTests.swift in Sources */,
+				CE52EF1D1CEB09640065AD70 /* SpetialContentOperationTests.swift in Sources */,
+				CE52EF1F1CEC262F0065AD70 /* FinalStringOperationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

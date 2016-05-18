@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         activityIndicator.startAnimating()
         parseStringButton.hidden = true
         inputTextField.endEditing(true)
-        
     }
     
     // MARK : Operations
@@ -78,13 +77,10 @@ class ViewController: UIViewController {
         weakSelf.parseStringButton.hidden = false
     }
     
-    
     private func parsedStringCallback(jsonDictionary: JSONDictionary){
         unowned let weakSelf = self
         weakSelf.stopActivityIndicator()    
         weakSelf.resultTextField.text = jsonDictionary.description
     }
-    
-    
 }
 

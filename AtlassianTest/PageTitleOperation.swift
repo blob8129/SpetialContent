@@ -23,7 +23,6 @@ class PageTitleOperation: NSOperation, LinkTileProtocol{
     let link: String
     var title: String = ""
     
-
     init(link: String){
         self.link = link
     }
@@ -31,24 +30,23 @@ class PageTitleOperation: NSOperation, LinkTileProtocol{
     override func main() {
         
         guard let url = NSURL(string: link) else{ return }
-
-        guard let input = try? String(contentsOfURL: url, encoding: NSISOLatin1StringEncoding) else { return }
-
+        guard let input = getWebPageContentForUrl(url) else { return }
         title = getFirstMatchInString(input, withPattern: "<title>(.+)</title>")
     }
     
+    internal func getWebPageContentForUrl(url: NSURL) -> String?{
+        return try? String(contentsOfURL: url, encoding: NSISOLatin1StringEncoding)
+    }
     
     private func getFirstMatchInString(input: String, withPattern pattern: String) ->  String {
         
         guard let regexp = try? NSRegularExpression(pattern: pattern, options: []) else { return "" }
-
+        
         guard let match = regexp.firstMatchInString(input, options: [], range: NSMakeRange(0, input.characters.count)) else { return "" }
         
         let range = match.rangeAtIndex(1)
-        
         let start = input.startIndex.advancedBy(range.location)
         let end = start.advancedBy(range.length)
-        
         return input.substringWithRange(start..<end)
     }
 
