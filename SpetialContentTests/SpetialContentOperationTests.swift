@@ -18,7 +18,6 @@ class SpetialContentOperationTests: XCTestCase {
     
 
     func testSpecialContentOperationCallsNoContentCallbackOnNoSpecialContent(){
-        
         let expectation = self.expectationWithDescription("Expect NoSpetialContentCallback call on noSpetialContent ")
         
         let specialContentOperation = SpecialContentOperation(input: self.noSpetialContent, callback: {c in}, noContentCallback: {
@@ -29,9 +28,7 @@ class SpetialContentOperationTests: XCTestCase {
     }
     
     func testSpecialContentOperationCallsSpetialContentCallbackOnSpecialContent(){
-        
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent ")
-        
         let specialContentOperation = SpecialContentOperation(input: self.spetialContentAllGroups, callback: {c in
             XCTAssertEqual(c.keys.count, 3, "Groups count must be 3")
             expectation.fulfill()
@@ -42,9 +39,7 @@ class SpetialContentOperationTests: XCTestCase {
     }
     
     func testSpecialContentOperationReturnsTwoGroups(){
-        
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent with two groups")
-        
         let specialContentOperation = SpecialContentOperation(input: self.spetialContentTwoGroups, callback: {c in
             
             XCTAssertEqual(c.keys.count, 2, "Groups count must be 2")
@@ -57,9 +52,7 @@ class SpetialContentOperationTests: XCTestCase {
     }
     
     func testSpecialContentOperationReturnsOneGroup(){
-        
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent with one group")
-        
         let specialContentOperation = SpecialContentOperation(input: self.spetialContentOneGroups, callback: {c in
             
             XCTAssertEqual(c.keys.count, 1, "Groups count must be 1")
