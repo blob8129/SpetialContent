@@ -1,6 +1,6 @@
 //
 //  FinalStringOperation.swift
-//  AtlassianTest
+//  SpetialContent
 //
 //  Created by Andrey Volobuev on 16/05/16.
 //  Copyright © 2016 Andrey Volobuev. All rights reserved.

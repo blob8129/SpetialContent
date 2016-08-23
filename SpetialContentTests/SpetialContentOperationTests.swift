@@ -1,13 +1,13 @@
 //
 //  SpetialContentOperationTests.swift
-//  AtlassianTest
+//  SpetialContent
 //
 //  Created by Andrey Volobuev on 17/05/16.
 //  Copyright © 2016 Andrey Volobuev. All rights reserved.
 //
 
 import XCTest
-@testable import AtlassianTest
+@testable import SpetialContent
 
 class SpetialContentOperationTests: XCTestCase {
     
@@ -26,7 +26,6 @@ class SpetialContentOperationTests: XCTestCase {
         })
         specialContentOperation.start()
         self.waitForExpectationsWithTimeout(1.0) { error in }
-        
     }
     
     func testSpecialContentOperationCallsSpetialContentCallbackOnSpecialContent(){
@@ -40,8 +39,8 @@ class SpetialContentOperationTests: XCTestCase {
         
         specialContentOperation.start()
         self.waitForExpectationsWithTimeout(1.0) { error in }
-        
     }
+    
     func testSpecialContentOperationReturnsTwoGroups(){
         
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent with two groups")
@@ -55,8 +54,8 @@ class SpetialContentOperationTests: XCTestCase {
         
         specialContentOperation.start()
         self.waitForExpectationsWithTimeout(1.0) { error in }
-        
     }
+    
     func testSpecialContentOperationReturnsOneGroup(){
         
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent with one group")
@@ -70,7 +69,6 @@ class SpetialContentOperationTests: XCTestCase {
         
         specialContentOperation.start()
         self.waitForExpectationsWithTimeout(1.0) { error in }
-        
     }
     
     func testSpecialContentGetKeyByGroup(){
@@ -79,7 +77,5 @@ class SpetialContentOperationTests: XCTestCase {
         XCTAssertEqual(SpetialContent.getKeyByGroup(SpetialContent.links.group), SpetialContent.links.key, "SpetialContent.getKeyByGroup for links must return links key")
         XCTAssertEqual(SpetialContent.getKeyByGroup(SpetialContent.links.group), SpetialContent.links.key, "SpetialContent.getKeyByGroup for links must return links key")
         XCTAssertEqual(SpetialContent.getKeyByGroup(4), "", "SpetialContent.getKeyByGroup for greter than 3 must return links empty string")
-        
     }
-    
 }

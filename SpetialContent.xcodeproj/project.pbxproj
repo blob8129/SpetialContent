@@ -40,14 +40,14 @@
 		CE52EF1A1CEB08BD0065AD70 /* PageTitleOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleOperationTests.swift; sourceTree = "<group>"; };
 		CE52EF1C1CEB09640065AD70 /* SpetialContentOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpetialContentOperationTests.swift; sourceTree = "<group>"; };
 		CE52EF1E1CEC262F0065AD70 /* FinalStringOperationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalStringOperationTests.swift; sourceTree = "<group>"; };
-		CEA4344B1CE956EF0052F7E2 /* AtlassianTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtlassianTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA4344B1CE956EF0052F7E2 /* SpetialContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpetialContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA434501CE956EF0052F7E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEA434531CE956F00052F7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEA434551CE956F00052F7E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA434581CE956F00052F7E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA4345A1CE956F00052F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEA4345F1CE956F00052F7E2 /* AtlassianTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtlassianTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA4345F1CE956F00052F7E2 /* SpetialContentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpetialContentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA434651CE956F00052F7E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEA4346F1CE957CF0052F7E2 /* PageTitleOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,16 +73,33 @@
 		CE11DA511CEA9E2D00D1D7B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */,
 				CE11DA4D1CE9A97E00D1D7B7 /* SpetialContent.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
+		CE558D041D6BDD5300421367 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA434501CE956EF0052F7E2 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE558D051D6BDD6600421367 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEA434521CE956F00052F7E2 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		CEA434421CE956EF0052F7E2 = {
 			isa = PBXGroup;
 			children = (
-				CEA4344D1CE956EF0052F7E2 /* AtlassianTest */,
-				CEA434621CE956F00052F7E2 /* AtlassianTestTests */,
+				CEA4344D1CE956EF0052F7E2 /* SpetialContent */,
+				CEA434621CE956F00052F7E2 /* SpetialContentTests */,
 				CEA4344C1CE956EF0052F7E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,29 +107,28 @@
 		CEA4344C1CE956EF0052F7E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEA4344B1CE956EF0052F7E2 /* AtlassianTest.app */,
-				CEA4345F1CE956F00052F7E2 /* AtlassianTestTests.xctest */,
+				CEA4344B1CE956EF0052F7E2 /* SpetialContent.app */,
+				CEA4345F1CE956F00052F7E2 /* SpetialContentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEA4344D1CE956EF0052F7E2 /* AtlassianTest */ = {
+		CEA4344D1CE956EF0052F7E2 /* SpetialContent */ = {
 			isa = PBXGroup;
 			children = (
+				CE558D051D6BDD6600421367 /* Storyboards */,
+				CE558D041D6BDD5300421367 /* ViewControllers */,
 				CE11DA511CEA9E2D00D1D7B7 /* Model */,
 				CEA4346E1CE957A10052F7E2 /* Operations */,
 				CEA4344E1CE956EF0052F7E2 /* AppDelegate.swift */,
-				CEA434501CE956EF0052F7E2 /* ViewController.swift */,
-				CEA434521CE956F00052F7E2 /* Main.storyboard */,
 				CEA434551CE956F00052F7E2 /* Assets.xcassets */,
 				CEA434571CE956F00052F7E2 /* LaunchScreen.storyboard */,
 				CEA4345A1CE956F00052F7E2 /* Info.plist */,
-				CE52EF181CEAAEA40065AD70 /* TypeAliases.swift */,
 			);
-			path = AtlassianTest;
+			path = SpetialContent;
 			sourceTree = "<group>";
 		};
-		CEA434621CE956F00052F7E2 /* AtlassianTestTests */ = {
+		CEA434621CE956F00052F7E2 /* SpetialContentTests */ = {
 			isa = PBXGroup;
 			children = (
 				CE52EF1A1CEB08BD0065AD70 /* PageTitleOperationTests.swift */,
@@ -120,7 +136,7 @@
 				CEA434651CE956F00052F7E2 /* Info.plist */,
 				CE52EF1E1CEC262F0065AD70 /* FinalStringOperationTests.swift */,
 			);
-			path = AtlassianTestTests;
+			path = SpetialContentTests;
 			sourceTree = "<group>";
 		};
 		CEA4346E1CE957A10052F7E2 /* Operations */ = {
@@ -136,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEA4344A1CE956EF0052F7E2 /* AtlassianTest */ = {
+		CEA4344A1CE956EF0052F7E2 /* SpetialContent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA434681CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "AtlassianTest" */;
+			buildConfigurationList = CEA434681CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "SpetialContent" */;
 			buildPhases = (
 				CEA434471CE956EF0052F7E2 /* Sources */,
 				CEA434481CE956EF0052F7E2 /* Frameworks */,
@@ -148,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = AtlassianTest;
+			name = SpetialContent;
 			productName = AtlassianTest;
-			productReference = CEA4344B1CE956EF0052F7E2 /* AtlassianTest.app */;
+			productReference = CEA4344B1CE956EF0052F7E2 /* SpetialContent.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CEA4345E1CE956F00052F7E2 /* AtlassianTestTests */ = {
+		CEA4345E1CE956F00052F7E2 /* SpetialContentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA4346B1CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "AtlassianTestTests" */;
+			buildConfigurationList = CEA4346B1CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "SpetialContentTests" */;
 			buildPhases = (
 				CEA4345B1CE956F00052F7E2 /* Sources */,
 				CEA4345C1CE956F00052F7E2 /* Frameworks */,
@@ -166,9 +182,9 @@
 			dependencies = (
 				CEA434611CE956F00052F7E2 /* PBXTargetDependency */,
 			);
-			name = AtlassianTestTests;
+			name = SpetialContentTests;
 			productName = AtlassianTestTests;
-			productReference = CEA4345F1CE956F00052F7E2 /* AtlassianTestTests.xctest */;
+			productReference = CEA4345F1CE956F00052F7E2 /* SpetialContentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -190,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEA434461CE956EF0052F7E2 /* Build configuration list for PBXProject "AtlassianTest" */;
+			buildConfigurationList = CEA434461CE956EF0052F7E2 /* Build configuration list for PBXProject "SpetialContent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,8 +219,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEA4344A1CE956EF0052F7E2 /* AtlassianTest */,
-				CEA4345E1CE956F00052F7E2 /* AtlassianTestTests */,
+				CEA4344A1CE956EF0052F7E2 /* SpetialContent */,
+				CEA4345E1CE956F00052F7E2 /* SpetialContentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +275,7 @@
 /* Begin PBXTargetDependency section */
 		CEA434611CE956F00052F7E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEA4344A1CE956EF0052F7E2 /* AtlassianTest */;
+			target = CEA4344A1CE956EF0052F7E2 /* SpetialContent */;
 			targetProxy = CEA434601CE956F00052F7E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -371,10 +387,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AtlassianTest/Info.plist;
+				INFOPLIST_FILE = SpetialContent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlassian.AtlassianTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avolobuev.SpetialContent;
+				PRODUCT_NAME = SpetialContent;
 			};
 			name = Debug;
 		};
@@ -382,10 +398,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AtlassianTest/Info.plist;
+				INFOPLIST_FILE = SpetialContent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlassian.AtlassianTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avolobuev.SpetialContent;
+				PRODUCT_NAME = SpetialContent;
 			};
 			name = Release;
 		};
@@ -395,9 +411,9 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AtlassianTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlassian.AtlassianTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtlassianTest.app/AtlassianTest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avolobuev.SpetialContentTests;
+				PRODUCT_NAME = SpetialContentTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpetialContent.app/SpetialContent";
 			};
 			name = Debug;
 		};
@@ -407,16 +423,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = AtlassianTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.atlassian.AtlassianTestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AtlassianTest.app/AtlassianTest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avolobuev.SpetialContentTests;
+				PRODUCT_NAME = SpetialContentTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpetialContent.app/SpetialContent";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEA434461CE956EF0052F7E2 /* Build configuration list for PBXProject "AtlassianTest" */ = {
+		CEA434461CE956EF0052F7E2 /* Build configuration list for PBXProject "SpetialContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA434661CE956F00052F7E2 /* Debug */,
@@ -425,7 +441,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA434681CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "AtlassianTest" */ = {
+		CEA434681CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "SpetialContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA434691CE956F00052F7E2 /* Debug */,
@@ -434,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA4346B1CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "AtlassianTestTests" */ = {
+		CEA4346B1CE956F00052F7E2 /* Build configuration list for PBXNativeTarget "SpetialContentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA4346C1CE956F00052F7E2 /* Debug */,

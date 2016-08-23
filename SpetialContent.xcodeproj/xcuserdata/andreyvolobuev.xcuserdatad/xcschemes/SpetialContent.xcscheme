@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEA4344A1CE956EF0052F7E2"
-               BuildableName = "AtlassianTest.app"
-               BlueprintName = "AtlassianTest"
-               ReferencedContainer = "container:AtlassianTest.xcodeproj">
+               BuildableName = "SpetialContent.app"
+               BlueprintName = "SpetialContent"
+               ReferencedContainer = "container:SpetialContent.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CEA4345E1CE956F00052F7E2"
-               BuildableName = "AtlassianTestTests.xctest"
-               BlueprintName = "AtlassianTestTests"
-               ReferencedContainer = "container:AtlassianTest.xcodeproj">
+               BuildableName = "SpetialContentTests.xctest"
+               BlueprintName = "SpetialContentTests"
+               ReferencedContainer = "container:SpetialContent.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEA4344A1CE956EF0052F7E2"
-            BuildableName = "AtlassianTest.app"
-            BlueprintName = "AtlassianTest"
-            ReferencedContainer = "container:AtlassianTest.xcodeproj">
+            BuildableName = "SpetialContent.app"
+            BlueprintName = "SpetialContent"
+            ReferencedContainer = "container:SpetialContent.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEA4344A1CE956EF0052F7E2"
-            BuildableName = "AtlassianTest.app"
-            BlueprintName = "AtlassianTest"
-            ReferencedContainer = "container:AtlassianTest.xcodeproj">
+            BuildableName = "SpetialContent.app"
+            BlueprintName = "SpetialContent"
+            ReferencedContainer = "container:SpetialContent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CEA4344A1CE956EF0052F7E2"
-            BuildableName = "AtlassianTest.app"
-            BlueprintName = "AtlassianTest"
-            ReferencedContainer = "container:AtlassianTest.xcodeproj">
+            BuildableName = "SpetialContent.app"
+            BlueprintName = "SpetialContent"
+            ReferencedContainer = "container:SpetialContent.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

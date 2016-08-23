@@ -1,6 +1,6 @@
 //
 //  SpecialContentOperation.swift
-//  AtlassianTest
+//  SpetialContent
 //
 //  Created by Andrey Volobuev on 16/05/16.
 //  Copyright © 2016 Andrey Volobuev. All rights reserved.
@@ -32,7 +32,6 @@ class SpecialContentOperation: NSOperation {
     }
     
     override func main() {
-        
         guard let regexp = try? NSRegularExpression(pattern: SpetialContent.pattern, options: []) else { return }
         
         let matches = regexp.matchesInString(input, options: [], range: NSMakeRange(0, input.characters.count))
@@ -42,12 +41,10 @@ class SpecialContentOperation: NSOperation {
             })
             return
         }
-        
         let result = getResultFomMathes(matches, andInput: input)
         dispatch_async(dispatch_get_main_queue(), {
             self.spetialContentCallback(result)  
         })
-        
     }
     
     private func getResultFomMathes(matches: [NSTextCheckingResult], andInput input: String) -> [String: [String]]{
