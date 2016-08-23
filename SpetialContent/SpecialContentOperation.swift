@@ -12,7 +12,7 @@ import UIKit
  
  ### Special content
  - @mentions - A way to mention a user. Always starts with an '@' and ends when hitting a non-word character.
- - Emoticons - 😀For this exercise, you only need to consider 'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesis 😀.
+ - Emoticons - 😀'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesis 😀.
  - Links - Any URLs contained in the message, along with the page's title. 
  
  - parameter input string to parse

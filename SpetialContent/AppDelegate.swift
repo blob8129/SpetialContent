@@ -8,7 +8,8 @@
 
 /*
  
-Solution takes a chat message string and returns a JSON string containing information about its contents. Special content to look for includes:
+ Solution takes a chat message string and returns a JSON string containing information about its contents. Special content to look for includes:
+ 
  1. @mentions - A way to mention a user. Always starts with an '@' and ends when hitting a non-word character.
  
  2. Emoticons - 'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesis.

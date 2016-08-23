@@ -65,19 +65,16 @@ class ViewController: UIViewController {
     // MARK : Callbacks
     
     private func spetialContentCallback(result: [String:[String]]){
-        unowned let weakSelf = self
-        weakSelf.createPageTitleOperations(result)
+        self.createPageTitleOperations(result)
     }
     
     private func noSpetialContentCallback(){
-        unowned let weakSelf = self
-        weakSelf.stopActivityIndicator()
+        self.stopActivityIndicator()
     }
     
     private func parsedStringCallback(jsonDictionary: JSONDictionary){
-        unowned let weakSelf = self
-        weakSelf.stopActivityIndicator()    
-        weakSelf.resultTextField.text = jsonDictionary.description
+        self.stopActivityIndicator()
+        self.resultTextField.text = jsonDictionary.description
     }
 }
 
