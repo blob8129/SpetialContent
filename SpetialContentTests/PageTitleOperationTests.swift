@@ -13,16 +13,14 @@ import XCTest
 class PageTitleOperationTests: XCTestCase {
     
     class TestPageTitleOperation: PageTitleOperation {
-        override func getWebPageContentForUrl(url: NSURL) -> String?{
+        override func getWebPageContentForUrl(url: NSURL) -> String? {
             return "input <!DOCTYPE html><head><title>2016 Rio Olympic Games | NBC Olympics</title><body></body>"
         }
     }
     
-    func testPageTitleOperationReturnsTitle(){
+    func testPageTitleOperationReturnsTitle() {
         let testPageTitleOperation = TestPageTitleOperation(link: "")
         testPageTitleOperation.start()
         XCTAssertEqual(testPageTitleOperation.title, "2016 Rio Olympic Games | NBC Olympics", "PageTitleOperation must return title")
-        
     }
-    
 }

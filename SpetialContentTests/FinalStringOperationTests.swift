@@ -12,11 +12,11 @@ import XCTest
 
 class FinalStringOperationTests: XCTestCase {
     
-    class TestFinalStringOperation: FinalStringOperation{
-        override func getLinks() -> [[String: String]]{
+    class TestFinalStringOperation: FinalStringOperation {
+        override func getLinks() -> [[String: String]] {
             if input["links"]?.count == 1 {
                 return [["url": "Test1", "title": "Test1"]]
-            }else{
+            } else {
                 return [["url": "Test1", "title": "Test1"], ["url": "Test2", "title": "Test2"]]
             }
         }
@@ -30,7 +30,7 @@ class FinalStringOperationTests: XCTestCase {
         "emoticons": ["success", "bicepleft", "bicepright"]]
 
     
-    func testFinalStringForOneLink(){
+    func testFinalStringForOneLink() {
         let expectation = self.expectationWithDescription("Expect finalString for one link")
         
         let finalStringOperation = TestFinalStringOperation(input: inputOneLink) { jsonDictionary in
@@ -41,7 +41,7 @@ class FinalStringOperationTests: XCTestCase {
         self.waitForExpectationsWithTimeout(1) { error in }
     }
     
-    func testFinalStringForTwoLinks(){
+    func testFinalStringForTwoLinks() {
         let expectation = self.expectationWithDescription("Expect finalString for two link")
         
         let finalStringOperation = TestFinalStringOperation(input: inputTwoLinks) { jsonDictionary in

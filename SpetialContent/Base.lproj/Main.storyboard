@@ -32,7 +32,7 @@
                                     <action selector="parseStringAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nbC-S5-VON"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="@bob @john (success) such a cool feature; (bicepleft) http://www.nbcolympics.com (bicepright) " translatesAutoresizingMaskIntoConstraints="NO" id="re1-X0-qXV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="@bob @john (success) such a cool feature; (bicepleft) http://www.nbcolympics.com (bicepright) http://spotify.com" translatesAutoresizingMaskIntoConstraints="NO" id="re1-X0-qXV">
                                 <rect key="frame" x="24" y="72" width="272" height="138"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>

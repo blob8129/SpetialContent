@@ -10,7 +10,7 @@ import Foundation
 /**
  Structure containig model information about the special content
  */
-struct SpetialContent{
+struct SpetialContent {
     
     static let mentions = (group: 1, pattern:"(@\\w+\\b)", key: "mentions")
     static let emoticons = (group: 2, pattern:"\\((\\w{1,15})\\)", key: "emoticons")
@@ -29,7 +29,7 @@ struct SpetialContent{
      - parameter group: regular expression matching group
      - Returns: special content key in a JSONDictionary
      */
-    static func getKeyByGroup(group: Int) -> String{
+    static func getKeyByGroup(group: Int) -> String {
         var key = ""
         switch group {
         case mentions.group :

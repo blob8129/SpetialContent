@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     
     private lazy var queue = NSOperationQueue()
     
-    func startActivityIndicator(){
+    func startActivityIndicator() {
         activityIndicator.startAnimating()
         parseStringButton.hidden = true
     }
     
-    func stopActivityIndicator(){
+    func stopActivityIndicator() {
         activityIndicator.stopAnimating()
         parseStringButton.hidden = false
     }
@@ -37,14 +37,14 @@ class ViewController: UIViewController {
     
     // MARK : Operations
     
-    private func parseSpetialContrentForInput(input: String){
+    private func parseSpetialContrentForInput(input: String) {
         let specialContentOperation = SpecialContentOperation(input: input, callback: spetialContentCallback, noContentCallback: noSpetialContentCallback)
         queue.addOperation(specialContentOperation)
     }
     
-    private func createPageTitleOperations(input: [String: [String]]){
+    private func createPageTitleOperations(input: [String: [String]]) {
         var final = JSONDictionary()
-        for key in input.keys where key != SpetialContent.links.key{
+        for key in input.keys where key != SpetialContent.links.key {
             final[key] = input[key]
         }
         guard let links = input[SpetialContent.links.key] else {
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         resultTextField.text = final.description
         
         let finalStringOperation = FinalStringOperation(input: input, finalStringCallback: parsedStringCallback)
-        for link in links{
+        for link in links {
             let pageTitleOperation = PageTitleOperation(link: link)
             finalStringOperation.addDependency(pageTitleOperation)
             queue.addOperation(pageTitleOperation)
@@ -64,17 +64,16 @@ class ViewController: UIViewController {
     
     // MARK : Callbacks
     
-    private func spetialContentCallback(result: [String:[String]]){
+    private func spetialContentCallback(result: [String:[String]]) {
         self.createPageTitleOperations(result)
     }
     
-    private func noSpetialContentCallback(){
+    private func noSpetialContentCallback() {
         self.stopActivityIndicator()
     }
     
-    private func parsedStringCallback(jsonDictionary: JSONDictionary){
+    private func parsedStringCallback(jsonDictionary: JSONDictionary) {
         self.stopActivityIndicator()
         self.resultTextField.text = jsonDictionary.description
     }
 }
-

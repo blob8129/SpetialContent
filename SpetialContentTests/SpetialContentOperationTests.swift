@@ -17,7 +17,7 @@ class SpetialContentOperationTests: XCTestCase {
     let spetialContentTwoGroups = "@bob @john (success) such a cool feature;"
     
 
-    func testSpecialContentOperationCallsNoContentCallbackOnNoSpecialContent(){
+    func testSpecialContentOperationCallsNoContentCallbackOnNoSpecialContent() {
         let expectation = self.expectationWithDescription("Expect NoSpetialContentCallback call on noSpetialContent ")
         
         let specialContentOperation = SpecialContentOperation(input: self.noSpetialContent, callback: {c in}, noContentCallback: {
@@ -27,7 +27,7 @@ class SpetialContentOperationTests: XCTestCase {
         self.waitForExpectationsWithTimeout(1.0) { error in }
     }
     
-    func testSpecialContentOperationCallsSpetialContentCallbackOnSpecialContent(){
+    func testSpecialContentOperationCallsSpetialContentCallbackOnSpecialContent() {
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent ")
         let specialContentOperation = SpecialContentOperation(input: self.spetialContentAllGroups, callback: {c in
             XCTAssertEqual(c.keys.count, 3, "Groups count must be 3")
@@ -38,7 +38,7 @@ class SpetialContentOperationTests: XCTestCase {
         self.waitForExpectationsWithTimeout(1.0) { error in }
     }
     
-    func testSpecialContentOperationReturnsTwoGroups(){
+    func testSpecialContentOperationReturnsTwoGroups() {
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent with two groups")
         let specialContentOperation = SpecialContentOperation(input: self.spetialContentTwoGroups, callback: {c in
             
@@ -51,7 +51,7 @@ class SpetialContentOperationTests: XCTestCase {
         self.waitForExpectationsWithTimeout(1.0) { error in }
     }
     
-    func testSpecialContentOperationReturnsOneGroup(){
+    func testSpecialContentOperationReturnsOneGroup() {
         let expectation = self.expectationWithDescription("Expect SpetialContentCallback call on SpetialContent with one group")
         let specialContentOperation = SpecialContentOperation(input: self.spetialContentOneGroups, callback: {c in
             
@@ -64,7 +64,7 @@ class SpetialContentOperationTests: XCTestCase {
         self.waitForExpectationsWithTimeout(1.0) { error in }
     }
     
-    func testSpecialContentGetKeyByGroup(){
+    func testSpecialContentGetKeyByGroup() {
         XCTAssertEqual(SpetialContent.getKeyByGroup(SpetialContent.mentions.group), SpetialContent.mentions.key, "SpetialContent.getKeyByGroup for mentions must return mentions key")
         XCTAssertEqual(SpetialContent.getKeyByGroup(SpetialContent.emoticons.group), SpetialContent.emoticons.key, "SpetialContent.getKeyByGroup for emoticons must return emoticons key")
         XCTAssertEqual(SpetialContent.getKeyByGroup(SpetialContent.links.group), SpetialContent.links.key, "SpetialContent.getKeyByGroup for links must return links key")
